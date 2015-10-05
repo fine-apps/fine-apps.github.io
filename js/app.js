@@ -91,8 +91,8 @@ $(window).resize(function () {
 
 
 //Set langitude and latidute for your location
-var lat = 40.729523;
-var lng = -73.978672;
+var lat = 43.215014;
+var lng = 27.8947804;
 var myLangLat = new google.maps.LatLng(lat, lng);
 
 google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY) {
@@ -107,6 +107,12 @@ google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY
     }; 
     ov.draw = function() {}; 
     ov.setMap(this); 
+
+    var marker = new google.maps.Marker({
+        map: map,
+        position: myLangLat,
+        title: 'Fine Apps Office'
+    });
 };
 
 /*
@@ -117,10 +123,10 @@ google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY
 
  	var mapOptions = {
  		zoom: 12,
- 		zoomControl: false,
- 		scaleControl: false,
- 		scrollwheel: false,
- 		draggable: false,
+ 		zoomControl: true,
+ 		scaleControl: true,
+ 		scrollwheel: true,
+ 		draggable: true,
  		center: myLangLat,
  		mapTypeControlOptions: {
  			mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
