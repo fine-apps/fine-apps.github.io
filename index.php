@@ -177,13 +177,8 @@
 						</p>
 					</address>
 					<address>
-						<span>Email</span>
-						<p>Please use contact form below</p>
-					</address>
-					<address>
 						<span>Phone</span>
 						<p>+359 886-899-793</p>
-						<p>Contact Person: Dimitar Grudev CMO
 					</address>
 				</div>
 			</div>
@@ -195,12 +190,12 @@
 			
 			<?php if($emailSent == 1): ?>
 		        <div class="col-md-6 col-md-offset-3">
-		            <div class="alert alert-success text-center">Your message has been send successfuly, we'll be get back at you as soon as possible.</div>
+		            <div class="alert alert-success text-center">Your message has been sent successfully. We'll be get back to you very soon./div>
 		        </div>
 		    <?php else: ?>
 		        <?php if($hasError == 1): ?>
 		        <div class="col-md-5 col-md-offset-4">
-		            <div class="alert alert-danger text-center">Error while trying to send your Email, please verify all fields again.</div>
+		            <div class="alert alert-danger text-center">An error occurred while sending mail. Please verify all fields again.</div>
 		        </div>
 		    	<?php endif; ?>
 		    <?php endif; ?>
