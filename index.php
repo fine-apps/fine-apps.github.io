@@ -190,7 +190,7 @@
 			
 			<?php if($emailSent == 1): ?>
 		        <div class="col-md-6 col-md-offset-3">
-		            <div class="alert alert-success text-center">Your message has been sent successfully. We'll be get back to you very soon./div>
+		            <div class="alert alert-success text-center">Your message has been sent successfully. We'll be get back to you very soon.</div>
 		        </div>
 		    <?php else: ?>
 		        <?php if($hasError == 1): ?>
