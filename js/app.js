@@ -91,8 +91,8 @@ $(window).resize(function () {
 
 
 //Set langitude and latidute for your location
-var lat = 43.215014;
-var lng = 27.8947804;
+var lat = 42.6907401;
+var lng = 23.257137;
 var myLangLat = new google.maps.LatLng(lat, lng);
 
 google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY) {
@@ -104,15 +104,10 @@ google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY
         aPoint.x = aPoint.x+offsetX;
         aPoint.y = aPoint.y+offsetY;
         map.setCenter(proj.fromContainerPixelToLatLng(aPoint));
-    }; 
-    ov.draw = function() {}; 
-    ov.setMap(this); 
+    };
 
-    var marker = new google.maps.Marker({
-        map: map,
-        position: myLangLat,
-        title: 'Fine Apps Office'
-    });
+    ov.draw = function() {}; 
+    ov.setMap(this);
 };
 
 /*
@@ -299,6 +294,12 @@ google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY
 
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     map.setCenterWithOffset(myLangLat, 0, -55);
+
+    var marker = google.maps.Marker({
+        map: map,
+        position: myLangLat,
+        title: 'Fine Apps Office'
+    });
 
 }
 google.maps.event.addDomListener(window, 'load', initializeMap);
