@@ -147,24 +147,24 @@
 				<p>Don’t hesitate to contact us via Email or Phone! We’ll respond from 9AM to 6PM every working day. We are at UTS/GMT +3 hours timezone.
 				</p>
 			</header>
-			
+			<a name="mail" href="mail"></a>
 			<div class="row">
 				<div class="col-md-8">
-					<form class="row">
+					<form action="send-php.php" id="contact-form" class="row" role="form" method="post">
 						<div class="form-group col-md-6">
-							<input name="name" type="text" placeholder="Your Name" class="form-control" />
+							<input type="text" class="form-control" id="form-name" name="form-name" placeholder="Your Name" required>
 						</div>
 						<div class="form-group col-md-6">
-							<input name="mail" type="email" placeholder="Your Email" class="form-control" />
+							<input type="email" class="form-control" id="form-email" name="form-email" placeholder="Your Email" required>
 						</div>
 						<div class="form-group col-md-12">
-							<input name="subject" type="text" placeholder="Type Message Here..." class="form-control" />
+							<input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="Type Subject Here..." required>
 						</div>
 						<div class="form-group col-md-12">
-							<textarea name="message" class="form-control" rows="10" placeholder="Message"></textarea>
+							<textarea class="form-control" rows="10" id="form-message" name="form-message" placeholder="Message" required></textarea>
 						</div>
 						<div class="form-group col-md-12">
-							<button class="btn btn-lg btn-primary">Send</button>
+							<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 						</div>
 					</form>
 				</div>
@@ -178,14 +178,33 @@
 					</address>
 					<address>
 						<span>Email</span>
-						<p>office@fineapps.info</p>
+						<p>Please use contact form below</p>
 					</address>
 					<address>
 						<span>Phone</span>
 						<p>+359 886-899-793</p>
+						<p>Contact Person: Dimitar Grudev CMO
 					</address>
 				</div>
 			</div>
+
+			<?php 
+			 $emailSent = $_GET['emailSent'];
+			 $hasError = $_GET['hasError'];
+			?>
+			
+			<?php if($emailSent == 1): ?>
+		        <div class="col-md-6 col-md-offset-3">
+		            <div class="alert alert-success text-center">Your message has been send successfuly, we'll be get back at you as soon as possible.</div>
+		        </div>
+		    <?php else: ?>
+		        <?php if($hasError == 1): ?>
+		        <div class="col-md-5 col-md-offset-4">
+		            <div class="alert alert-danger text-center">Error while trying to send your Email, please verify all fields again.</div>
+		        </div>
+		    	<?php endif; ?>
+		    <?php endif; ?>
+
 			<!--
 			<header>
 				<h2>We Are Here</h2>
@@ -234,5 +253,13 @@
 
 	<!-- Load custom js for theme -->
 	<script type="text/javascript" src="js/app.js"></script>
+
+	<!--[if lt IE 9]>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--<![endif]-->
+	<script type="text/javascript" src="js/contact-form.js"></script>
 </body>
 </html>
