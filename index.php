@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FineApps.info fine mobile apps development :: Android, iOS, Blackberry, Windows Phone</title>
+	<title>FineApps.info We create mobile apps finely crafted for your business :: Android, iOS, Blackberry, Windows Phone</title>
 
 	<!-- Load fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -19,6 +19,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- Pinterest website confirmation -->
+	<meta name="p:domain_verify" content="eef8af38ae19315aaa3a4e147412c92a"/>
 
 </head>
 <body>
@@ -48,9 +51,10 @@
 		</nav>
 		<div class="container">
 			<div class="header-info">
+				<!--
 				<h2>We create mobile apps</h2>
-				<p>finely crafted for your business.
-				</p>
+				<p>finely crafted for your business.</p>
+				-->
 				<a href="#Portfolio" class="btn btn-primary">Learn More</a>
 			</div>
 		</div>
@@ -224,11 +228,11 @@
 				</div>
 				<div class="col-md-4">
 					<ul class="social-icons">
-						<li><a href=""><i class="fa fa-facebook"></i></a></li>
-						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-						<li><a href=""><i class="fa fa-behance"></i></a></li>
-						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="https://www.facebook.com/fineappsltd"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/FineAppsInfo"><i class="fa fa-twitter"></i></a></li>
+						<!-- <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+						<!-- <li><a href=""><i class="fa fa-behance"></i></a></li> -->
+						<li><a href="https://www.pinterest.com/fineappsltd/"><i class="fa fa-pinterest"></i></a></li>
 					</ul>
 				</div>
 			</div>
