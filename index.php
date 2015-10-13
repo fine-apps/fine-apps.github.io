@@ -42,11 +42,11 @@
 				<li><a data-scroll href="#contact">Contact</a></li>
 			</ul>
 			<ul class="social-icons">
-				<li><a href=""><i class="fa fa-facebook"></i></a></li>
-				<li><a href=""><i class="fa fa-twitter"></i></a></li>
-				<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-				<li><a href=""><i class="fa fa-behance"></i></a></li>
-				<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+				<li><a href="https://www.facebook.com/fineappsltd"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/FineAppsInfo"><i class="fa fa-twitter"></i></a></li>
+				<!-- <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+				<!-- <li><a href=""><i class="fa fa-behance"></i></a></li> -->
+				<li><a href="https://www.pinterest.com/fineappsltd/"><i class="fa fa-pinterest"></i></a></li>
 			</ul>
 		</nav>
 		<div class="container">
@@ -55,7 +55,7 @@
 				<h2>We create mobile apps</h2>
 				<p>finely crafted for your business.</p>
 				-->
-				<a href="#Portfolio" class="btn btn-primary">Learn More</a>
+				<a href="#Portfolio" class="btn btn-learnmore">Learn More</a>
 			</div>
 		</div>
 	</div>
@@ -130,8 +130,26 @@
 			</div>
 			</br>
 			<div class="row">
+
 				<figure class="portfolio-item col-md-4 col-sm-6" >
-					<img class="img-responsive" src="img/projects/zebrito-preview.jpg" alt="Adena icons pack" />
+					<img class="img-responsive" src="img/projects/belotbg_small.png" alt="Casualino online casino games project" />
+					<figcaption class="mask">
+						<a href="projects/project-belotbg.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/subway_small.png" alt="Subway promo mobile games and app in one" />
+					<figcaption class="mask">
+						<a href="projects/project-subway.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/zebrito-preview.jpg" alt="Zebrito Studios official website" />
 					<figcaption class="mask">
 						<a href="projects/project-zebrito.html">
 							<i class="glyphicon glyphicon-plus"></i>
@@ -176,9 +194,11 @@
 					<address>
 						<span>Our Address</span>
 						<p>
-						bulevard "Akademik Ivan Evstratiev Geshov" 2<br>
-						1330 Sofia, Bulgaria
-						</p>
+							Philip Avramov 17<br/>
+							Mladost 3<br/>
+							Sofia 1712<br/>
+							Bulgaria
+						</p><!-- http://www.m3mc.bg/ -->
 					</address>
 					<address>
 						<span>Phone</span>

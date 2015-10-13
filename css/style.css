@@ -324,7 +324,15 @@ PORTFOLIO
 }
 
 .btn-primary{
-	margin-top: 200px;
+	margin-top: 70px;
+	background: #fa5c58;
+	border-width: 2px;
+	color: #fff;
+	border-color: #fa5c58;
+}
+
+.btn-learnmore{
+	margin-top: 600px;
 	background: #fa5c58;
 	border-width: 2px;
 	color: #fff;
