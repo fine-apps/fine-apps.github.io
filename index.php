@@ -194,9 +194,8 @@
 					<address>
 						<span>Our Address</span>
 						<p>
-							Philip Avramov 17<br/>
-							Mladost 3<br/>
-							Sofia 1712<br/>
+							"Patriarh Evtimii" 40-G str.<br/>
+							Varna 9000<br/>
 							Bulgaria
 						</p><!-- http://www.m3mc.bg/ -->
 					</address>
